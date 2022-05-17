@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+:root {
+    /* Colors */
+    --white-default: #fff;
+    --gray-default: #e7e7e7;
+    --orange-default: #FFB455;
+    --acerola: #ED7839;
+    --font-color: #5C5C5C;
+    ;
+    --cont-header: #FDF1EB;
+
+    /* fonts */
+    --Quicksand: "Quicksand", sans-serif;
+    --roboto: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--Quicksand);
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    padding: 0 36px;
+    position: relative;
+    font-family: var(--Quicksand);
+    color: var(--font-color);
+}
+
+.galoa-logo-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galoa-logo img {
+    width: 200px;
+    vertical-align: middle;
+}
+
+.more-btn button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #71478E;
+    border-radius: 5px;
+    color: #FFF;
+    margin: 0 auto;
+    padding: calc(10px / 2);
+    width: 200px;
+}
+
+
+.galoa-description {
+    align-self: center;
+    padding: 15px;
+
+}
+
+.galoa-description p {
+    margin: 0 0 10px;
+}

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+:root {
+    /* Colors */
+    --white-default: #fff;
+    --gray-default: #e7e7e7;
+    --orange-default: #FFB455;
+    --acerola: #ED7839;
+    --font-color: #5C5C5C;;
+    --cont-header: #FDF1EB;
+
+    /* fonts */
+    --Quicksand: "Quicksand", sans-serif;
+    --roboto: "Roboto",sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--Quicksand);
+}
+
+/* Sidebar Fixed */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-default);
+    box-shadow: 3px 0 5px 0 var(--gray-default);
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 220px;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    z-index: 100;
+}
+
+.sidebar-midia {
+    display: none;
+}
+
+.sidebar-menu-wrapper {
+    display: none;
+}
+
+.language-btn {
+    display: none;
+}
+
+
+/* Title SLACA 2019 */
+
+.title-gradient {
+    background-color: var(--white-default);
+    background: linear-gradient(0deg, var(--acerola) 0%,var(--orange-default) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--white-default);
+    height: 68px;
+    width: 220px;
+    margin-left: -12px;
+}
+
+.name-slaca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar-info {
+    display: none;
+}
+
+
+/* LOGO 13 SLACA */
+
+.logo-slaca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    height: 208px;
+    margin: 26px 0;
+}
+
+.img-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    height: 208px;
+    margin: 26px 0;
+}
+
+.img-logo img {
+    width: 200px;
+    height: 200px;
+}
+
+/* NAV LIST */
+
+.list li {
+    display: flex;
+    flex-direction: column;
+    background: inherit;
+    height: 35px;
+    position: relative;
+    border-bottom: 2px solid #ECECEC;
+    left: -30px;
+}
+
+.list li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 24px;
+    text-decoration: none;
+    transition: padding-left 100ms ease;
+}
+
+.list li a:hover {
+    background-color: var(--acerola);
+    color: var(--white-default);
+}
+
+a.active {
+    background: linear-gradient(0deg,#ED7839 0%,#FFB455 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
